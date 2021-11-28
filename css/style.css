@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+.fg-color-secondary{
+    color: rgba(35, 44, 80, 1);
+}
+
+/*------------------Estilos header----------------------*/
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 4.5rem 3.75rem;
+    align-items: center;
+    margin:0 4.5rem;
+}
+
+.navBar{
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+}
+
+.navBar li{
+    padding: 0 1.75rem;
+}
+
+.btn-get{
+    background-color: rgba(243, 96, 59, 1);
+    border-radius: 3rem;
+    border: none;
+    padding: 0.75rem 2rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);;
+}
+
+/*------------------Estilos main------------------------*/
+main section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation{
+    padding: 0 3.75rem 2rem 3.75rem;
+    margin-left:4.5rem;
+}
+
+.information{
+    padding: 2rem 3.75rem;
+    margin-left:4.5rem;
+}
+
+.presentation-right, .presentation-left, .information-right, .information-left{
+    width: 50% !important;
+}
+
+.presentation-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.presentation-left-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.presentation-left{
+    padding: 6.75rem 9rem 6.75rem 0;
+}
+
+.presentation-left p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    padding: 1.75rem 0;
+    width: 75%;
+}
+
+.information-container{
+    margin: 2rem;
+}
+
+.information-left{
+    padding-top: 2rem;
+}
+
+.information-left h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-right: 3rem;
+}
+
+.information-left p{
+    padding-top: 2.25rem; 
+    width: 55%;
+    font-weight: 500;
+}
+
+.information-right ul{
+    list-style: none;
+}
+
+.information-item-container {
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+    margin: 1rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.information-item{
+    background-color: rgba(243, 96, 59, 1);
+    padding: 0.6rem 0;
+    border-radius: 2rem;
+}
+
+.information-item-text{
+    padding-left: 6.25rem;
+    color: rgba(179, 178, 183, 1);
+    font-weight: 500;
+}
+
+.information-item-title{
+    font-weight: 700;
+    padding-left: 1.5rem;
+    color: rgba(50, 56, 81, 1);
+}
+
+.team, .container-avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team{
+    padding: 2rem 0 11.25rem 0;
+}
+
+.container-avatar{
+    background: linear-gradient(180deg, #fff 10%, #f5f5f5 10%);
+}
+
+/*.container-avatar{
+    background-color: #f5f5f5;
+    position: relative;
+}*/
+
+.team h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 3rem 0;
+}
+
+.team>div{
+    display: flex;
+    padding: 4rem;
+}
+
+.container-avatar img{
+    width: 4.25rem;
+}
+
+/*.container-avatar img{
+    width: 4.25rem;
+    position: absolute;
+    bottom: 85%;
+}*/
+
+.container-avatar p:nth-of-type(1){
+    font-weight: 700;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+}
+
+.container-avatar p:nth-of-type(2){
+    font-weight: 600;
+    color: rgba(185, 185, 193, 1);
+    padding: 0 0.7rem 1.5rem 0.7rem;
+}
+
+/*--------------------Estilos footer--------------------*/
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8.25rem;
+    background-color: rgba(243, 97, 60, 1);
+}
+
+.btn-get-footer{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(243, 96, 59, 1);
+    border-radius: 3rem;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.footer-main p{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 1);
+    width: 30rem;
+}
+
+.footer-bottom{
+    padding: 3.25rem 8.25rem;
+    background-color: rgba(30, 30, 38, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom>div:nth-child(1){
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.social-netw i{
+    padding-right: 0.7rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-bottom div ul{
+    list-style: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+}
+
+.footer-bottom div ul li{
+    padding-bottom: 0.75rem;
+}
+
+form input{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3rem;
+    border: none;
+    padding: 0.75rem 2rem 0.75rem 0.5rem;
+    font-weight: 600;
+    color: rgba(160, 160, 160, 1);
+    width: 12.5rem;
+}
+.btn-go{
+    background-color: rgba(243, 96, 59, 1);
+    border-radius: 3rem;
+    border: none;
+    padding: 0.7rem 1.25rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.footer-bottom>div:nth-child(4) p{
+    color: rgba(140, 140, 148, 1);
+    font-size: 0.775rem;
+    text-align: end;
+    padding-top: 4.6rem;
+}
+
+/*------------------------ANIMACIONES-------------------*/
+.navBar li:hover{
+    cursor: pointer;
+    color: rgba(35, 44, 80, 0.7)
+}
+
+.btn-get:hover{
+    cursor: pointer;
+    background-color: rgba(243, 96, 59, 0.7);
+}
+
+.btn-get-footer:hover{
+    cursor: pointer;
+    color: rgba(243, 96, 59, 0.7);
+}
+
+.btn-go:hover{
+    cursor: pointer;
+    background-color: rgba(243, 96, 59, 0.7);
+}
+
+.social-netw i:hover{
+    cursor: pointer;
+    color: rgba(243, 96, 59, 1);
+}
+
+.footer-bottom div ul li:hover{
+    cursor: pointer;
+    color: rgba(243, 96, 59, 1);
+}
+
+form input:focus{
+    color: rgba(243, 96, 59, 1);
+    outline-color: rgba(243, 96, 59, 1);
+}
