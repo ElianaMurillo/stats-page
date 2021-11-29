@@ -1,5 +1,3 @@
-# Guía de estilo de front-end
-
 ## Diseño
 
 Los diseños se crearon con los siguientes anchos:

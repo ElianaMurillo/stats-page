@@ -330,6 +330,10 @@ main section{
         padding: 4.5rem 2rem;
     }
 
+    .logo{
+        padding-top: 0.5rem;
+    }
+
     .navBar{
         display: none;
     }
@@ -408,6 +412,8 @@ main section{
         text-align: left;
         margin-left: 1rem;
         font-weight: 700;
+        border-bottom-left-radius: 3rem;
+        border-top-left-radius: 3rem;
     }
 
     .information-container{
