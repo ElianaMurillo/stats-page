@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Examen</title>
+    <title>manage-stats</title>
 </head>
 <body>
     <header>
@@ -24,6 +24,7 @@
             </ul>
         </nav>
         <button type="submit" class="btn-get">Get Started</button>
+        <img class="btn-navBar" src="imagenes/icon-hamburger.svg" alt="menu-desplegable">
     </header>
     <main>
         <section class="presentation">
@@ -39,34 +40,40 @@
         <section class="information">
             <div class="information-left">
                 <h2 class="fg-color-secondary">What's different about Manage?</h2>
-                <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+                <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
             </div>
             <div class="information-right">
                 <ul>
                     <li>
                         <div class="information-container">
-                            <div class="information-item-container">
-                                <p class="information-item">01</p>
+                            <div class="information-container-title">
+                                <div class="information-item-container">
+                                    <p class="information-item">01</p>
+                                </div>
+                                <span class="fg-color-secondary information-title">Track company-wide progress</span>
                             </div>
-                            <span class="fg-color-secondary information-title">Track company-wide progress</span>
                             <p class="information-item-text">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
                         </div>
                     </li>
                     <li>
                         <div class="information-container">
-                            <div class="information-item-container">
-                                <p class="information-item">02</p>
+                            <div class="information-container-title">
+                                <div class="information-item-container">
+                                    <p class="information-item">02</p>
+                                </div>
+                                <span class="fg-color-secondary information-title">Advance built-in reports</span>
                             </div>
-                            <span class="fg-color-secondary information-title">Advance built-in reports</span>
                             <p class="information-item-text">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep kep stakeholders informed.</p>
                         </div>
                     </li>
                     <li>
                         <div class="information-container">
-                            <div class="information-item-container">
-                                <p class="information-item">03</p>
+                            <div class="information-container-title">
+                                <div class="information-item-container">
+                                    <p class="information-item">03</p>
+                                </div>
+                                <span class="fg-color-secondary information-title">Everything you need in one place</span>
                             </div>
-                            <span class="fg-color-secondary information-title">Everything you need in one place</span>
                             <p class="information-item-text">Stop jumping from one service to another to communicate, store files, tracj tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
                         </div>
                     </li>
@@ -92,6 +99,7 @@
                     <p>"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone i talk to!"</p>
                 </div>
             </div>
+            <i class="fas fa-ellipsis-h"></i>
             <button type="submit" class="btn-get">Get Started</button>
         </section>
     </main>    
@@ -111,24 +119,26 @@
                     <i class="fab fa-instagram"></i>
                 </div>
             </div>
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Pricing</li>
-                    <li>Products</li>
-                    <li>About Us</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>Careers</li>
-                    <li>Community</li>
-                    <li>Privacy Policy</li>
-                </ul>
+            <div class="footer-list">
+                <div>
+                    <ul>
+                        <li>Home</li>
+                        <li>Pricing</li>
+                        <li>Products</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Careers</li>
+                        <li>Community</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
             </div>
             <div>
                 <form action="/inbox" method="get">
-                    <input type="email" name="email" placeholder="Update in your inbox...">
+                    <input id="email" class="input-email" type="email" name="email" placeholder="Update in your inbox...">
                     <button class="btn-go" type="submit">Go</button>
                 </form>
                 <p>Copyright 2020. All Rights Reserved</p>

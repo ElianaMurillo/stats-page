@@ -13,13 +13,17 @@ html{
     color: rgba(35, 44, 80, 1);
 }
 
-/*------------------Estilos header----------------------*/
+/*-----------------------Header-------------------------*/
 header{
     display:flex;
     justify-content: space-between;
     padding: 4.5rem 3.75rem;
     align-items: center;
     margin:0 4.5rem;
+}
+
+.btn-navBar{
+    display: none;
 }
 
 .navBar{
@@ -42,7 +46,7 @@ header{
     box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);;
 }
 
-/*------------------Estilos main------------------------*/
+/*----------------------Main----------------------------*/
 main section{
     display: flex;
     justify-content: space-between;
@@ -59,7 +63,7 @@ main section{
 }
 
 .presentation-right, .presentation-left, .information-right, .information-left{
-    width: 50% !important;
+    width: 50%;
 }
 
 .presentation-right{
@@ -149,6 +153,10 @@ main section{
     background: linear-gradient(180deg, #fff 10%, #f5f5f5 10%);
 }
 
+.team i{
+    display: none;
+}
+
 /*.container-avatar{
     background-color: #f5f5f5;
     position: relative;
@@ -186,7 +194,7 @@ main section{
     padding: 0 0.7rem 1.5rem 0.7rem;
 }
 
-/*--------------------Estilos footer--------------------*/
+/*------------------------Footer------------------------*/
 .footer-main{
     display: flex;
     justify-content: space-between;
@@ -229,6 +237,10 @@ main section{
     align-items: flex-start;
 }
 
+.footer-list{
+    flex-direction: row !important;
+}
+
 .social-netw i{
     padding-right: 0.7rem;
     font-size: 1.5rem;
@@ -245,15 +257,20 @@ main section{
     padding-bottom: 0.75rem;
 }
 
-form input{
+.footer-list div:nth-child(1){
+    padding-right: 13rem;
+}
+
+.input-email{
     background-color: rgba(255, 255, 255, 1);
     border-radius: 3rem;
     border: none;
-    padding: 0.75rem 2rem 0.75rem 0.5rem;
+    padding: 0.75rem 2rem 0.75rem 1rem;
     font-weight: 600;
     color: rgba(160, 160, 160, 1);
     width: 12.5rem;
 }
+
 .btn-go{
     background-color: rgba(243, 96, 59, 1);
     border-radius: 3rem;
@@ -264,20 +281,20 @@ form input{
     font-size: 0.8rem;
 }
 
-.footer-bottom>div:nth-child(4) p{
+.footer-bottom>div:nth-child(3) p{
     color: rgba(140, 140, 148, 1);
     font-size: 0.775rem;
     text-align: end;
     padding-top: 4.6rem;
 }
 
-/*------------------------ANIMACIONES-------------------*/
+/*------------------------ANIMATIONS-------------------*/
 .navBar li:hover{
     cursor: pointer;
     color: rgba(35, 44, 80, 0.7)
 }
 
-.btn-get:hover{
+.btn-get:hover , .btn-go:hover{
     cursor: pointer;
     background-color: rgba(243, 96, 59, 0.7);
 }
@@ -285,11 +302,6 @@ form input{
 .btn-get-footer:hover{
     cursor: pointer;
     color: rgba(243, 96, 59, 0.7);
-}
-
-.btn-go:hover{
-    cursor: pointer;
-    background-color: rgba(243, 96, 59, 0.7);
 }
 
 .social-netw i:hover{
@@ -302,7 +314,210 @@ form input{
     color: rgba(243, 96, 59, 1);
 }
 
-form input:focus{
+.input-email:focus{
     color: rgba(243, 96, 59, 1);
     outline-color: rgba(243, 96, 59, 1);
+}
+
+/*-------------------------MOBILE-----------------------*/
+
+@media (max-width:375px) {
+
+
+    /*-----------------------------header--------------------------*/
+    header{
+        margin: 0;
+        padding: 4.5rem 2rem;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .btn-navBar{
+        display: block;
+    }
+
+    .btn-navBar:hover{
+        cursor:pointer;
+        opacity: 0.7;
+    }
+
+    header button{
+        display: none;
+    }
+
+    /*---------------------------main------------------------------*/
+    .presentation{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0 2rem;
+    }
+
+    .presentation-right, .presentation-left{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation-right img{
+        width: 20rem;
+        padding-bottom: 2rem;
+    }
+
+    .presentation-left-title{
+        padding: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .presentation-left p{
+        text-align: center;
+        margin: 0;
+        width: fit-content;
+        color: rgba(179, 178, 183, 1);
+    }
+
+    .btn-get{
+        width: 10rem;
+    }
+
+    .information{
+        margin: 0;
+        padding: 5rem 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .information-container, .information-item-text, .information-left, .information-right, .information-left h2, .information-left p, .team{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .information-left p{
+        padding: 1rem 2rem 2rem 2rem;
+        color: rgba(179, 178, 183, 1);
+    }
+
+    .information-container-title{
+        background-color: rgba(243, 96, 59, 0.1);
+        text-align: left;
+        margin-left: 1rem;
+        font-weight: 700;
+    }
+
+    .information-container{
+        padding: 1rem 0;
+    } 
+
+    .information-item-container{
+        margin: 0;
+    }
+
+    .information-item-text{
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .team{
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .team h2{
+        padding-top: 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .team>div{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container-avatar:nth-child(1), .container-avatar:nth-child(3){
+        display: none;
+    }
+
+    .team i{
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        color: rgba(243, 96, 59, 1);
+    }
+
+    /*----------------------------footer---------------------------*/
+    .footer-main {
+        flex-direction: column;
+        padding: 1rem 1rem 4rem 1rem;
+    }
+
+    .footer-main p{
+        width: fit-content;
+        padding: 3rem 3rem 1rem 3rem;
+        font-size: 1.75rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom{
+        padding: 3rem 1rem 5rem 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .footer-bottom>div:nth-child(1){
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+
+    .footer-bottom>div:nth-child(1) img, .social-netw{
+        padding: 2rem 1rem;  
+    }
+
+    .social-netw i{
+        font-size: 2.25rem;
+        text-align: center;
+        padding: 0 0.75rem;
+    }
+
+    .social-netw i:last-child{
+        padding-right: 0;
+    }
+
+    .social-netw i:first-child{
+        padding-left: 0;
+    }
+
+    .footer-list{
+        justify-content: space-around;
+        padding: 3rem 1rem 0 1rem; 
+    }
+
+    .footer-list div:nth-child(1){
+        padding-right: 0rem;
+    }
+
+    form{
+        text-align: center;
+    }
+
+    .input-email{
+        width: 70%;
+    }
+
+    .footer-bottom>div:nth-child(3){
+        position: relative;
+    }
+
+    .footer-bottom>div:nth-child(3) p{
+        padding: 0;
+        position: absolute;
+        top: 27rem;
+        left: 20%;
+    }
+
 }
